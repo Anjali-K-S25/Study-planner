@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Study Planner</h1>
+  </header>
+
+  <main>
+    <!-- Add Task Form -->
+    <section class="task-form">
+      <input type="text" id="taskTitle" placeholder="Task title">
+      <input type="text" id="taskSubject" placeholder="Subject">
+      <input type="date" id="taskDueDate">
+      <select id="taskPriority">
+        <option value="Low">🟢 Low</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="High">🔴 High</option>
+      </select>
+      <button id="addTaskBtn">➕ Add Task</button>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+      <input type="text" id="searchTask" placeholder="🔍 Search tasks">
+      <select id="filterPriority">
+        <option value="All">All Priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </section>
+
+    <!-- Progress Bar -->
+    <section class="progress-section">
+      <label>Progress:</label>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span id="progressText">0%</span>
+    </section>
+
+    <!-- Task List -->
+    <section class="task-list">
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ Powered by Local Storage | GitHub Pages Ready</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
